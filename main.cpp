@@ -20,6 +20,10 @@ double Priceing(){
     cin >> a;
     if(a == 1)
         {cout << "Something";}
-        if else(a==2)
+        if else(a==2){}
+        if else(a==3){}
+        if else(a==4){}
+        if else(a==5){}
+        if else(a==6){}
     return sum;
 }
