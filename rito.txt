@@ -1,4 +1,8 @@
 Ne znam ko praNe mogavq
 456464646546
 What
+<<<<<<< HEAD
 Korektno
+=======
+As fuck
+>>>>>>> daa8b69e406b448d50d545d252648fa70c9e4824
