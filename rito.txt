@@ -5,4 +5,4 @@ What
 Korektno
 =======
 As fuck
->>>>>>> daa8b69e406b448d50d545d252648fa70c9e4824
+>>>>>>> daa8b69e646464448d50d545d252648fa70c9e4824
