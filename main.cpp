@@ -16,7 +16,7 @@ int main()
 }
 double Priceing(){
     int a, b, sum;
-    cout << "Genres: \n 1)RPG \n 2)FPS \n 3)Cars \n 4)Anime 5)Kids \n 6)EXIT \n\n\n";
+    cout << "Genres: \n 1)RPG \n 2)FPS \n 3)Cars \n 4)Anime 5)Kids \n 6)EXIT \n\N\n";
     cin >> a;
     if(a == 1)
         {cout << "Something";}
