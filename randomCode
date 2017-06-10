@@ -1,1 +1,194 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace camp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string season = Console.ReadLine().ToLower();
+            string typeGroup = Console.ReadLine().ToLower();
+            double students = double.Parse(Console.ReadLine());
+            double nights = double.Parse(Console.ReadLine());
+            double cenaBG = 0;
+            double cenaMix = 0;
+            double discount = 0;
+            double price = 0;
+            double endPrice = 0;
+           
+            if (season == "winter")
+            {
+
+                if (typeGroup == "boys" || typeGroup == "girls")
+                {
+                    cenaBG = 9.60;
+                    price = cenaBG * students * nights;
+                    if (students >= 50)
+                    {
+                        discount = price * 0.50;
+                    }
+                    else if (students < 50 && students >= 20)
+                    {
+                        discount = price * 0.15;
+                    }
+                    else if (students < 20 && students >= 10)
+                    {
+                        discount = price * 0.05;
+
+                    }
+                    endPrice = price - discount;
+
+                    if (typeGroup == "boys")
+                    {
+                        Console.WriteLine($"Judo {endPrice:f2} lv.");
+
+                    }
+                    else if (typeGroup == "girls")
+                    {
+                        Console.WriteLine($"Gymnastics {endPrice:f2} lv.");
+                    }
+
+                }
+                else if (typeGroup == "mixed")
+                {
+                    cenaMix = 10;
+                    price = cenaMix * students * nights;
+                    endPrice = price - discount;
+                    Console.WriteLine($"Ski {endPrice:f2} lv.");
+                    if (students >= 50)
+                    {
+                        discount = price * 0.50;
+                    }
+                    else if (students < 50 && students >= 20)
+                    {
+                        discount = price * 0.15;
+                    }
+                    else if (students < 20 && students >= 10)
+                    {
+                        discount = price * 0.05;
+
+                    }
+                }
+
+            }
+            //////////////
+
+            if (season == "spring")
+            {
+
+                if (typeGroup == "boys" || typeGroup == "girls")
+                {
+                    cenaBG = 7.20;
+                    price = cenaBG * students * nights;
+                    if (students >= 50)
+                    {
+                        discount = price * 0.50;
+                    }
+                    else if (students < 50 && students >= 20)
+                    {
+                        discount = price * 0.15;
+                    }
+                    else if (students < 20 && students >= 10)
+                    {
+                        discount = price * 0.05;
+
+                    }
+                    endPrice = price - discount;
+
+                    if (typeGroup == "boys")
+                    {
+                        Console.WriteLine($"Tennis {endPrice:f2} lv.");
+
+                    }
+                    else if (typeGroup == "girls")
+                    {
+                        Console.WriteLine($"Athletics {endPrice:f2} lv.");
+                    }
+
+                }
+                else if (typeGroup == "mixed")
+                {
+                    cenaMix = 9.50;
+                    price = cenaMix * students * nights;
+                    if (students >= 50)
+                    {
+                        price *= 0.50;
+                    }
+                    else if (students < 50 && students >= 20)
+                    {
+                        discount = price * 0.15;
+                    }
+                    else if (students < 20 && students >= 10)
+                    {
+                        price*=0.95;
+                    }
+                  
+                    Console.WriteLine($"Cycling {price:f2} lv.");
+                }
+
+            }
+            ////////
+    if (season == "summer")
+            {
+
+                if (typeGroup == "boys" || typeGroup == "girls")
+                {
+                    cenaBG = 15;
+                    price = cenaBG * students * nights;
+                    if (students >= 50)
+                    {
+                        discount = price * 0.50;
+                    }
+                    else if (students < 50 && students >= 20)
+                    {
+                        discount = price * 0.15;
+                    }
+                    else if (students < 20 && students >= 10)
+                    {
+                        discount = price * 0.05;
+
+                    }
+                    endPrice = price - discount;
+
+                    if (typeGroup == "boys")
+                    {
+                        Console.WriteLine($"Football {endPrice:f2} lv.");
+
+                    }
+                    else if (typeGroup == "girls")
+                    {
+                        Console.WriteLine($"Volleyball {endPrice:f2} lv.");
+                    }
+
+                }
+                else if (typeGroup == "mixed")
+                {
+                    cenaMix = 20;
+                    price = cenaMix * students * nights;
+                    endPrice = price - discount;
+                    if (students >= 50)
+                    {
+                        price *= 0.50;
+                    }
+                    else if (students < 50 && students >= 20)
+                    {
+                         price *= 0.85;
+                    }
+                    else if (students < 20 && students >= 10)
+                    {
+                        price *= 0.95;
+
+                    }
+                    
+                    Console.WriteLine($"Swimming {price:f2} lv.");
+                }
+
+            }
+
+        }
+    }
+}
